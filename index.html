@@ -2,8 +2,9 @@
 <head>
   <title>CSS Dashboard</title>
 
+<script src="https://use.fontawesome.com/3f9179fb0f.js"></script>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
   <!-- Spritesheet -->
   <link rel="stylesheet" type="text/css" href="css/spritesheet.css">
@@ -16,8 +17,38 @@
  <!-- Top Menu -->
  <div class="container-fluid top-menu">
    <div class="row vertical-center">
-     <div class="col-md-12">
-      <a href="">MINI of Raleigh</a> | <div class="help-icon"></div> | <div class="settings-icon"></div>
+     <div class="col-3 offset-9">
+       <ul>
+         <li class="gray-hover">
+           <a href="#" class="top-menu-icon top-menu-link">MINI of Raleigh</a>
+         </li>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="1px" height="25px">
+         <path fill-rule="evenodd"  fill="rgb(28, 133, 216)"
+          d="M-0.000,0.000 L1.000,0.000 L1.000,30.000 L-0.000,30.000 L-0.000,0.000 Z"/>
+         </svg>
+
+         <li>
+           <a href="#"><div class="help-icon top-menu-icon"></div></a>
+         </li>
+
+         <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="1px" height="25px">
+         <path fill-rule="evenodd"  fill="rgb(28, 133, 216)"
+          d="M-0.000,0.000 L1.000,0.000 L1.000,30.000 L-0.000,30.000 L-0.000,0.000 Z"/>
+         </svg>
+
+         <li>
+           <a href="#"><div class="settings-icon top-menu-icon nav-icon"></div></a>
+           <div class="settings-gray top-nav-hover"></div>
+       </ul>
+
+
+
      </div>
    </div>
  </div>
@@ -28,22 +59,41 @@
      <div class="col-md-12">
      <ul>
        <li>
-          <div class="dashboard-blue"></div>
+          <a href="#"><div class="dashboard-blue nav-icon"></div></a>
+          <a href="#"><div class="dashboard-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
+          <svg class="chevron"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="40px" height="10px">
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M40.000,10.000 L20.000,-0.000 L0.000,10.000 L40.000,10.000 Z"/>
+</svg>
        </li>
        <li>
-          <div class="customers-blue"></div>
+          <a href="#"><div class="customers-blue nav-icon"></div></a>
+          <a href="#"><div class="customers-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
        </li>
        <li>
-          <div class="messages-blue"></div>
+          <a href="#"><div class="messages-blue nav-icon"></div></a>
+          <a href="#"><div class="messages-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
        </li>
        <li>
-          <div class="promotions-blue"></div>
+          <a href="#"><div class="promotions-blue nav-icon"></div></a>
+          <a href="#"><div class="promotions-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
        </li>
        <li>
-          <div class="creator-blue"></div>
+          <a href="#"><div class="creator-blue nav-icon"></div></a>
+          <a href="#"><div class="creator-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
        </li>
        <li>
-          <div class="analytics-blue"></div>
+          <a href="#"><div class="analytics-blue nav-icon"></div></a>
+          <a href="#"><div class="analytics-green nav-hover"></div></a>
+          <img src="images/icon-shadow.png" alt="Shadow under icon" class="icon-shadow">
        </li>
      </ul>
     </div>
@@ -51,7 +101,26 @@
   </div>
 
   <!--- Title Bar --->
+  <div class="container title-bar">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="col-md-3 offset-md-6">
+        <div class="input-group">
+    <!--- Search bar code from https://getbootstrap.com/docs/3.3/components/ ---->
+      <input type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+    </div>
+      </div>
+    </div>
+  </div>
 
+  <!---Main Content --->
+  <div class="container main-content"><!--Surrounding box -->
+  </div>
 
 
 
@@ -59,7 +128,7 @@
 
 
 <!-- Bootstrap JS ---->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>

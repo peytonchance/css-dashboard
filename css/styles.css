@@ -9,11 +9,15 @@ body{
   font-family: 'Proxima Nova', sans-serif;
   font-size: 14px;
 }
+h1{
+  font-size: 36px;
+}
 .flex{
   display: flex;
 }
 .vertical-center{
   align-items: center;
+  width: 100%;
 }
 /* Top Menu */
 .top-menu{
@@ -26,9 +30,33 @@ body{
   color: #fff;
 }
 
+.top-menu ul{
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+}
+
+.top-menu li{
+  position: relative;
+}
+
+.top-menu-icon{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .gray-hover a:hover{
   color: #f1f1f1;
   text-decoration: none;
+}
+
+.top-nav-hover{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 6px;
 }
 
 /* ---- Main Nav ----*/
@@ -36,7 +64,7 @@ body{
   background-image: url('../images/main-nav-background.png');
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 200px;
+  min-height: 120px;
 }
 
 .main-nav ul{
@@ -44,4 +72,66 @@ body{
   list-style-type: none;
   flex-direction: row;
   justify-content: center;
+  margin-top: 34px;
 }
+
+.main-nav li{
+  margin-right: 30px;
+  position: relative;
+}
+
+.nav-icon{
+  position: relative;
+  z-index: 10000;
+}
+
+.nav-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.nav-icon:hover{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.icon-shadow{
+  position: absolute;
+  top: 62px;
+}
+
+.chevron{
+  position: absolute;
+  top: 75px;
+  left: 10px;
+}
+
+/* ------ Title Bar -----*/
+.title-bar{
+  background-color: #33cc66;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+.fa-search{
+  color: #2498f4;
+}
+
+.form-control{
+  border-color: #2db55b;
+}
+.btn{
+  background: #fff;
+  border-color: #2db55b;
+  border-left: none;
+}
+
+/* ------- Main Content -----*/
+.main-content{
+  min-height: 700px;
+  }
