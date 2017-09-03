@@ -1,0 +1,47 @@
+/* CSS Dashboard
+
+Custom Styles by Peyton Chance
+MEJO 487 at UNC-Chapel Hill */
+
+/* Global Styles */
+
+body{
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 14px;
+}
+.flex{
+  display: flex;
+}
+.vertical-center{
+  align-items: center;
+}
+/* Top Menu */
+.top-menu{
+  background: linear-gradient(#2498f4, #1d85d8);
+  display: flex;
+  height: 44px;
+}
+
+.top-menu a{
+  color: #fff;
+}
+
+.gray-hover a:hover{
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* ---- Main Nav ----*/
+.main-nav{
+  background-image: url('../images/main-nav-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+.main-nav ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+}
