@@ -143,8 +143,19 @@ h3{
 }
 
 /* ------- Main Content -----*/
-.main-content{
+.main-content-border{
   margin-top: 10px;
+  padding-top: 8px;
+  background: linear-gradient(to bottom, #f6f6f6 0%, #fff 250px, #fff 100%);
+  border-radius: 10px;
+}
+
+.main-content{
+  background-color: #fff;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eee;
 }
 .page-controls button{
   background-color: #fff;
@@ -163,13 +174,18 @@ h3{
 
 .avatar-box{
   height: 30px;
-  width: 60px;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 1px;
-  border-color: #eee;
-  display: flex;
-  align-items: center;
+width: 60px;
+border-style: solid;
+border-radius: 3px;
+border-width: 1px;
+border-color: #eee;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+position: absolute;
+right: 32px;
+margin-top: -25px;
+padding-bottom: 4px;
 }
 
 .avatar-blue-small{
@@ -183,10 +199,28 @@ h3{
   padding-left: 0px;
 }
 /* ----- Custom Number styles from https://codepen.io/sawmac/pen/txBhK */
+.task-header{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 15px;
+}
+.task-header .settings-gray{
+  margin-left: 212px;
+}
 .task-column li{
   display: flex;
   flex-direction: row;
   counter-increment: step-counter;
+  height: 50px;
+  border-style: solid;
+  border-top: none;
+  border-width: 1px;
+  border-color: #eee;
+  border-left: none;
+  padding-left: 17px;
+  align-items: center;
+  margin-left: -15px;
 }
 
 .task-column li::before {
@@ -195,9 +229,29 @@ h3{
   width: 25px;
   height: 25px;
   text-align: center;
-  align-items: center;
+  padding-top: 2px;
   font-size: 14px;
   background-color: #32cc66;
   color: white;
   border-radius: 50%;
+  margin-right: 10px
+}
+
+.task-column li:hover{
+  filter: grayscale(100%);
+  cursor: pointer;
+  text-decoration: none;
+}
+.avatar-number-fix{
+  margin-left: 5px;
+}
+
+/* ------ Recommendations Column ------*/
+.recommendations-column ul{
+  list-style-type: none;
+}
+
+.recommendations-column li{
+  display: flex;
+  flex-direction: row;
 }
