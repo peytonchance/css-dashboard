@@ -12,6 +12,11 @@ body{
 h1{
   font-size: 36px;
 }
+h3{
+  font-size: 14px;
+  color: #fe7f13;
+  text-transform: uppercase;
+}
 .flex{
   display: flex;
 }
@@ -57,6 +62,12 @@ h1{
   z-index: 10;
   top: 0;
   left: 6px;
+}
+
+.gray-border{
+  border-style: solid;
+  border-color: #eee;
+  border-width: 1px;
 }
 
 /* ---- Main Nav ----*/
@@ -133,5 +144,60 @@ h1{
 
 /* ------- Main Content -----*/
 .main-content{
-  min-height: 700px;
-  }
+  margin-top: 10px;
+}
+.page-controls button{
+  background-color: #fff;
+  border: none;
+}
+
+.page-controls a:hover{
+  cursor: pointer;
+}
+
+.main-content-row h2{
+  color: #2498f4;
+}
+
+/*----- Tasks Bar ----*/
+
+.avatar-box{
+  height: 30px;
+  width: 60px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-blue-small{
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.task-column ol{
+  list-style-type: none;
+  color: #2498f3;
+  padding-left: 0px;
+}
+/* ----- Custom Number styles from https://codepen.io/sawmac/pen/txBhK */
+.task-column li{
+  display: flex;
+  flex-direction: row;
+  counter-increment: step-counter;
+}
+
+.task-column li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #32cc66;
+  color: white;
+  border-radius: 50%;
+}
