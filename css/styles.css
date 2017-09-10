@@ -126,7 +126,7 @@ h3{
   padding-bottom: 10px;
   padding-left: 20px;
   border-radius: 5px;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .fa-search{
@@ -204,6 +204,7 @@ padding-bottom: 4px;
   flex-direction: row;
   align-items: baseline;
   margin-top: 15px;
+  border-right: solid 1px #eee;
 }
 .task-header .settings-gray{
   margin-left: 212px;
@@ -221,6 +222,7 @@ padding-bottom: 4px;
   padding-left: 17px;
   align-items: center;
   margin-left: -15px;
+  font-size: 18px;
 }
 
 .task-column li::before {
@@ -237,7 +239,7 @@ padding-bottom: 4px;
   margin-right: 10px
 }
 
-.task-column li:hover{
+.all-gray-hover li:hover{
   filter: grayscale(100%);
   cursor: pointer;
   text-decoration: none;
@@ -249,9 +251,158 @@ padding-bottom: 4px;
 /* ------ Recommendations Column ------*/
 .recommendations-column ul{
   list-style-type: none;
+  padding-left: 5px;
+  border-right: solid 1px #eee;
 }
 
 .recommendations-column li{
   display: flex;
   flex-direction: row;
+  border-bottom: dotted 1px #eee;
+  padding-top: 10px;
+  width: 90%;
 }
+.task-header p{
+  margin-top: 5px;
+  float: left;
+}
+
+.recomm-flex{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.recomm-flex p{
+  margin-top: -10px;
+}
+
+.recomm-flex h3{
+  color: #999999;
+  text-transform: none;
+}
+#check{
+  margin-left: 10px;
+}
+#bulb{
+  margin-left: 21px;
+}
+
+/* ------- Analytics Section ------- */
+.right-content{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+.bar-graph{
+  width: 500px;*/
+  height: auto;
+}
+/*.graph-width .col-md-8{
+  width: 500px;
+}*/
+.graph-border{
+  padding-right: 30px;
+  border-right: solid 2px;
+  border-color: rgba(0,0,0,0.07);
+  margin-bottom: 10px;
+    /*width: 500px;*/
+}
+/*.pie-graphs{
+
+}*/
+.analytics-flex{
+  flex-direction: row;
+}
+
+.analytics-flex h3{
+  color: #999999;
+  align-self: center;
+}
+
+.dropdown{
+margin-left: 35%;
+}
+
+#dropdownMenu2{
+  border: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 5px;
+  font-family: 'Proxima Nova';
+  color: #666666;
+  letter-spacing: 0.75px;
+  display: flex;
+  flex-direction: row;
+}
+.dropdown-toggle::after {
+    display: none;
+  }
+.arrow-holder{
+  padding-left: 10px;
+border-left: solid 1px #eee;
+margin-top: -2px;
+margin-bottom: -8px;
+min-height: 26px;
+margin-left: 3px;
+}
+.social-share{
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 14px;
+  width: 500px;
+}
+.facebook-custom{
+  background-color: #114570;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.twitter-custom{
+  background-color: #2298f4;
+  border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.foursquare-custom{
+  background-color: #3a599b;
+  border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.google-custom{
+  background-color: #31cc66;
+  border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+div.social-share{
+  width: 100px;
+}
+
+.one-social{
+  display: flex;
+  flex-direction: row;
+}
+.social-check{
+  -webkit-appearance: none;
+  width: 23px;
+  height: 21px;
+  background-image: url('../images/checkbox.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  margin: 0px 5px 0px 5px;
+}
+
+.social-check:checked{
+  background-image: url('../images/checked.png');
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+/* ------- Testing Checkboxes -------*/

@@ -135,7 +135,7 @@
     </div> <!-- Announcements Row-->
     <div class="row main-content-row">
       <div class="col-md-4">
-        <div class="task-column">
+        <div class="task-column all-gray-hover">
         <div class="task-header"><h2>Tasks</h2><div class="settings-gray"></div></div>
         <ol>
           <li>Welcome Contacts <div class="avatar-box"><div class="avatar-blue-small"></div> 32</div></li>
@@ -146,24 +146,50 @@
       </div>
       <div class="recommendations-column">
         <div class="task-header"><h2>Recommendations</h2><div class="settings-gray"></div></div>
-        <ul>
-          <li><div class="article-with-shadow"></div> <h3>Article</h3><p>7 Steps to getting more Fans</p></li>
-          <li><div class="article-with-shadow"></div> <h3>Article</h3> <p>Increase traction with more interations</p></li>
-          <li><div class="check-with-shadow"></div> <h3>Checklist</h3> <p>Creating a Promotion</p></li>
-          <li><div class="bulb-with-shadow"></div> <h3>Tip</h3> <p>Creating a Promotion</p></li>
+        <ul class="all-gray-hover">
+          <li><div class="article-with-shadow"></div> <div class="recomm-flex"><h3>Article</h3><p>7 Steps to getting more Fans</p></div></li>
+          <li><div class="article-with-shadow"></div> <div class="recomm-flex"><h3>Article</h3><p>Increase traction with more interations</p></div></li>
+          <li><div class="check-with-shadow"></div> <div class="recomm-flex" id="check"><h3>Checklist</h3> <p>Creating a Promotion</p></div></li>
+          <li><div class="bulb-with-shadow"></div> <div class="recomm-flex" id="bulb"><h3>Tip</h3> <p>Share More</p></div></li>
         </ul>
       </div>
       </div>
 
       <div class="col-md-8">
         <div class="task-header"><h2>Analytics</h2></div>
+        <div class="right-content">
+        <div class="col-md-10 graph-width">
+          <div class="graph-border">
+          <div class="flex analytics-flex"><h3>ACTIVITY</h3>
+            <!--- Dropdown code from https://v4-alpha.getbootstrap.com/components/dropdowns/#menu-items --->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  06/28/11 - 07/21/11 <div class="arrow-holder"><div class="down-arrow-orange"></div></div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">07/22/11 - 08/15/11</button>
+                  <button class="dropdown-item" type="button">08/16/11 - 09/09/11</button>
+                  <button class="dropdown-item" type="button">09/10/11 - 10/03/11</button>
+                </div>
+              </div>
+            </div>
+            <img src="images/bar-graph.png" class="bar-graph" alt="Analytics Bar Graph">
+          </div>
+            <div class="social-share">
+              <div class="one-social"><input type="checkbox" class="social-check" checked><div class="facebook-custom">Facebook</div></div>
+              <div class="one-social"><input type="checkbox" class="social-check" checked><div class="twitter-custom">Twitter</div></div>
+              <div class="one-social"><input type="checkbox" class="social-check"><div class="foursquare-custom">Foursquare</div></div>
+              <div class="one-social"><input type="checkbox" class="social-check"><div class="google-custom">Google+ </div></div>
+            </div>
+        </div>
+        <div class="col-md-2 pie-graphs">
+          <img src="images/pie-graphs.png" alt="Pie Graphs">
+        </div>
       </div>
     </div>
   </div>
+  </div>
 </div> <!-- Main Content Border --->
-
-
-
 
 
 
