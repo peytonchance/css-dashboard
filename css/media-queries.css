@@ -1,0 +1,141 @@
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+    .utility-nav {
+        margin-left: 45%;
+    }
+    .main-nav{
+        background-size: cover;
+    }
+    .main-nav ul {
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+    .main-nav li {
+    margin-right: 6px;
+  }
+    .chevron{
+      top: 76px;
+    }
+    .title-bar h1{
+      font-size: 27px;
+    }
+    .title-bar{
+      margin: 2% 1% 0px 1%;
+    }
+    .announcements-row{
+      text-align: center;
+    }
+    .announcements-row h3{
+      padding-top: 10px;
+    }
+    .page-controls{
+    justify-content: center;
+    padding-top: 5px;
+    border-top: 1px;
+    }
+    .recommendations-column{
+      border-right: none;
+      min-height: initial;
+    }
+    .task-column li{
+      border-right: none;
+      margin-right: -16px;
+    }
+    .task-header-fix{
+      border-right: none;
+    }
+    .gray-border{
+      border-left: none;
+      border-right: none;
+      border-width: 1px;
+    }
+    .bar-graph{
+      width: 304px;
+    }
+    .graph-border{
+      padding-right: 130px;
+      border-right: none;
+    }
+    .analytics-flex{
+      margin-bottom: 10%;
+    }
+    .social-share{
+      flex-flow: wrap;
+    }
+    .social-share div{
+      margin-top: 2%;
+      justify-content: center;
+    }
+    div.social-share{
+      position: absolute;
+    right: 54px;
+    z-index: 1000;
+    }
+    .pie-graphs{
+      margin-top: 12px;
+      padding-left: 30px;
+    }
+    .left-ribbon{
+      top: 621px;
+    left: 32px;
+    }
+    .right-ribbon{
+      top: 621px;
+      right: 31px;
+    }
+    .left-ribbon-2{
+      top: 933px;
+      left: 34px;
+    }
+    .right-ribbon-2{
+      top: 932px;
+      right: 32px;
+    }
+    .next-arrow{
+      bottom: 119px;
+      top: inherit;
+    }
+    .back-arrow{
+      top: inherit;
+      right: inherit;
+    left: 15px;
+    bottom:119px;
+    }
+
+    .ad-image-box{
+      margin-bottom: 10%;
+    }
+    .footer-row{
+      margin-left: 0px;
+    }
+    .utility-nav-footer{
+      text-align: center;
+    }
+    .promotion-footer{
+      border-left: none;
+      border-right: none;
+      width: 97%;
+      margin-top: 2%;
+      margin-right: 10%;
+      margin-left: 10%;
+      justify-content: center;
+      background-color: #33CC66;
+      border-radius: 5px;
+      color: #fff;
+      padding-bottom: 10px;
+      padding-top: 11px;
+    }
+    .profile-footer{
+      margin-top: 10%;
+      text-align: center;
+      justify-content: center;
+    }
+    .social-footer{
+      border-left: none;
+      border-right: none;
+      justify-content: center;
+      margin-top: 1%;
+    }
+
+}
