@@ -329,9 +329,11 @@ padding-bottom: 4px;
   margin-bottom: 10px;
     /*width: 500px;*/
 }
-/*.pie-graphs{
-
-}*/
+.pie-graphs h4{
+color: #999999;
+font-size: 14px;
+margin-top: 15px;
+}
 .analytics-flex{
   flex-direction: row;
 }
