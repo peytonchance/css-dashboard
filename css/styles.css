@@ -6,7 +6,7 @@ MEJO 487 at UNC-Chapel Hill */
 /* Global Styles */
 
 body{
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 14px;
 }
 h1{
@@ -352,7 +352,7 @@ margin-left: 35%;
   border-color: #ddd;
   border-width: 1px;
   border-radius: 5px;
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
   color: #666666;
   letter-spacing: 0.75px;
   display: flex;

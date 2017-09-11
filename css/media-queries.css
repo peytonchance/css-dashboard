@@ -77,19 +77,19 @@
       padding-left: 30px;
     }
     .left-ribbon{
-      top: 621px;
+      top: 636px;
     left: 32px;
     }
     .right-ribbon{
-      top: 621px;
+      top: 636px;
       right: 31px;
     }
     .left-ribbon-2{
-      top: 933px;
+      top: 948px;
       left: 34px;
     }
     .right-ribbon-2{
-      top: 932px;
+      top: 947px;
       right: 32px;
     }
     .next-arrow{
@@ -136,6 +136,15 @@
       border-right: none;
       justify-content: center;
       margin-top: 1%;
+    }
+    .icon-shadow{
+      position: absolute;
+      top: 62px;
+      right: -2px;
+    }
+    .col-12{
+      max-width: 63%;
+padding-right: 0%;
     }
 
 }
